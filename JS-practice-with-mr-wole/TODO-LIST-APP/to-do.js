@@ -25,15 +25,15 @@ var todoList = [
 todoForm.addEventListener('submit', function(e){
   e.preventDefault()
 
-  //addTodo(e.target.title.value)
+  addTodo(e.target.title.value)
 
   //e.target.title.value = ''
-  console.log(e.target.title.value);
+  //console.log(e.target.title.value);
 
-  var element = document.createElement('li')
-  element.innerText = e.target.title.value
+  //var element = document.createElement('li')
+  //element.innerText = e.target.title.value
 
- li.appendChild(element)
+ //li.appendChild(element)
 })
 
 
@@ -50,9 +50,10 @@ var x = ['a', 'b', 'c']
 
 
 var displayTodo = function () {
-
+  ul.innerText = ''
 
   todoList.forEach(function (todo){
+
     var element = document.createElement('li')
     element.innerText = todo.title
   
@@ -60,6 +61,7 @@ var displayTodo = function () {
   
   })
 }
+displayTodo()
 displayTodo()
 
 //var displayTodo = function(){
@@ -71,13 +73,18 @@ displayTodo()
 //  })
 //}
 
-//var addTodo = function (txt) {
+var addTodo = function (txt) {
   //create the todo object
   // add the to do object to the todo array
 
-  //var T = {
-   // title: txt,
-   // description: '',
-    //completed: false
-  //}
-//}
+  var T = {
+    title: txt,
+    description: '',
+    completed: false
+  }
+
+  todoList.push(T)
+  displayTodo()
+}
+
+displayTodo()
