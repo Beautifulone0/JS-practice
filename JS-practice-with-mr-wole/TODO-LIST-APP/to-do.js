@@ -51,7 +51,7 @@ var x = ['a', 'b', 'c']
 
 var displayTodo = function () {
 
-  
+
   todoList.forEach(function (todo){
     var element = document.createElement('li')
     element.innerText = todo.title
@@ -60,6 +60,7 @@ var displayTodo = function () {
   
   })
 }
+displayTodo()
 
 //var displayTodo = function(){
 //  ul.innerHTML = ''
