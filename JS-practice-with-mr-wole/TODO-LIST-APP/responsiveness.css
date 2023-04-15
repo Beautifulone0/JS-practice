@@ -79,31 +79,28 @@
     top: -220px;
   }
 }
-/*@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
   .container input:first-child {
-    width: 55%;
-    height: -40%;
+    
     left: 100px;
   }
   .container input:last-child {
-    left: 190px;
-    margin-top: 60px;
-    width: 25%;
-    height: 25%;
+    left: 80px;
+    top: -50px;
   }
-}*/
+}
 
-/*@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .container input:first-child{
     padding: 10px;
   }
   .container input:last-child{
     position: relative;
-    right: -270px;
-    top: -50px;
+    left: 200px;
+    
   }
 }
-@media  screen and (max-width: 1200px) {
+/*@media  screen and (min-width: 1200px) {
   .container input:last-child{
     right: 160px;
   }

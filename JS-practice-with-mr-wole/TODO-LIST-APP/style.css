@@ -33,9 +33,10 @@ form{
     width: 95%;
 }
 .container input:last-child{
-    position: absolute;
-    right: 240px;
-    margin-left: -39px;
+    position: relative;
+    right: 10px;
+    top: 3px;
+    margin-left: 350px;
     background-color: hsl(240, 59%, 57%);
     color: hsl(240, 57%, 89%);
     text-align: center;
